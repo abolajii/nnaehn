@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
-import { Profile } from './components';
+import { Profiles } from './components';
 import axios from 'axios';
 
 const Container = styled.div`
@@ -42,8 +42,6 @@ const App = () => {
 
 		fetchData();
 	}, []);
-
-	console.log(profile);
 
 	if (isLoading) {
 		return (
