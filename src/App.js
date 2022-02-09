@@ -49,8 +49,8 @@ const App = () => {
 				Profile 10
 				{Array(7)
 					.fill()
-					.map((each) => (
-						<Profiles loading={isLoading} />
+					.map((each, index) => (
+						<Profiles key={index} loading={isLoading} />
 					))}
 				{/* {profile.map((each) => (
 					<Profiles loading={isLoading} />
@@ -61,7 +61,7 @@ const App = () => {
 
 	return (
 		<Container>
-			Profile
+			Profile updated, nna ehn
 			{profile.map((each) => (
 				<Profiles key={each.id} profile={each} />
 			))}

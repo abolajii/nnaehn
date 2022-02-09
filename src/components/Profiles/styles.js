@@ -6,7 +6,7 @@ export const Container = styled.div`
 	margin: 40px 0px;
 `;
 
-export const Name = styled.p`
+export const Name = styled.div`
 	width: 300px;
 	height: 20px;
 	color: #8a99c0;
