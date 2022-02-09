@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
-import { Profiles, Skeleton } from './components';
+import { Profile } from './components';
 import axios from 'axios';
 
 const Container = styled.div`
@@ -44,8 +44,6 @@ const App = () => {
 	}, []);
 
 	console.log(profile);
-
-	let loadingProfiles = [];
 
 	if (isLoading) {
 		return (
